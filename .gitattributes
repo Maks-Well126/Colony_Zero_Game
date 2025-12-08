@@ -1,0 +1,50 @@
+
+# Изображения (большие)
+*.png  filter=lfs diff=lfs merge=lfs -text
+*.jpg  filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.tga  filter=lfs diff=lfs merge=lfs -text
+*.psd  filter=lfs diff=lfs merge=lfs -text
+# 3D / Game Dev
+*.fbx filter=lfs diff=lfs merge=lfs -text
+*.obj filter=lfs diff=lfs merge=lfs -text
+*.blend filter=lfs diff=lfs merge=lfs -text
+*.pak filter=lfs diff=lfs merge=lfs -text
+*.uasset filter=lfs diff=lfs merge=lfs -text
+*.umap filter=lfs diff=lfs merge=lfs -text
+# ================================
+# 🔹 ТЕКСТОВЫЕ ФАЙЛЫ (CRLF/LF)
+* text=auto
+*.c     text
+*.cpp   text
+*.h     text
+*.hpp   text
+*.cs    text
+*.py    text
+*.js    text
+*.ts    text
+*.json  text
+*.xml   text
+*.html  text
+*.css   text
+*.md    text
+*.txt   text
+*.yml   text
+*.yaml  text
+*.ini   text
+# 🔹 UNITY / UNREAL META
+*.meta text
+*.asset text
+*.controller text
+*.prefab text
+*.unity text
+# 🔹 ОТКЛЮЧЕНИЕ ПЕРЕНОСОВ ДЛЯ БИНАРНИКОВ
+*.pdf -text
+*.ico -text
+*.ttf -text
+*.otf -text
+*.tif  filter=lfs diff=lfs merge=lfs -text
+*.tiff filter=lfs diff=lfs merge=lfs -text
+*.tif filter=lfs diff=lfs merge=lfs -text
+*.unity filter=lfs diff=lfs merge=lfs -text
+*.asset filter=lfs diff=lfs merge=lfs -text
